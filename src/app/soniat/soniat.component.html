@@ -41,7 +41,7 @@
                             <div class="panel-body msg_container_base" ngClass="messageList" #box>
                                 <div class="espaciado row msg_container base_receive">
                                     <div class="col-md-2 col-xs-2 avatar">
-                                        <img src="../../assets/img/0.png" class=" img-responsive ml-2">
+                                        <img src="assets/img/SONIAT.png" class=" img-responsive ml-2">
                                     </div>
                                     <div class="col-md-10 col-xs-10">
                                         <div class="messages msg_receive colorbot mx-3">
@@ -62,7 +62,7 @@
                                     </div>
                                     <div *ngIf="mostrar && i % 4 == 2" class="row msg_container base_receive" id="messages" (ngSubmit)="scroll()">
                                         <div class="col-md-2 col-xs-2 avatar">
-                                            <img src="../../assets/img/0.png" class=" img-responsive ml-2">
+                                            <img src="assets/img/SONIAT.png" class=" img-responsive ml-2">
                                         </div>
                                         <div class="col-xs-10 col-md-10">
                                             <div class="messages msg_receive colorbot mx-3">
@@ -77,8 +77,8 @@
                                 <div class="input-group">
                                     <input class="borderEscribir textinput" type="text" onfocus="this.value=''" formControlName="mensaje" name="" id="mensaje " required autocomplete="off" [(ngModel)]="mensaje.mensaje" placeholder="Escribe aquí..." #chat/>
                                     <span class="input-group-btn">
-							            <button class="btn btn-sm button" id="btn-chat"  (click)="onSubmit()" data-toggle="modal" data-target="#modal" >&nbsp; <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i> &nbsp;</button>
-							        </span>
+                                        <button class="btn btn-sm button" id="btn-chat"  (click)="onSubmit()" data-toggle="modal" data-target="#modal" >&nbsp; <i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i> &nbsp;</button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -86,10 +86,20 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="positi">
-            <img id="ocultar" class="img tamano positi" src="../../assets/img/soniat.gif" (click)="closeOpenedWindow()" alt="">
-        </div>
     </div>
 </form>
+
+
+<footer class="fixed-bottom">
+    <div class="container-fluid">
+        <div class="row m-0 p-0">
+            <div class="col-md-12 col-sm-12">
+                <div class="float-right">
+                    <img id="ocultar" class="img tamano" src="assets/img/soniat.gif"  alt="" (click)="closeOpenedWindow()">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
